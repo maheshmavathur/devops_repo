@@ -9,3 +9,6 @@ sum1=`expr $sum`
 echo "The value of sum is stored in $sum1"
 lsoutput=`ls`
 echo "The output of ls command is store in\n $lsoutput"
+
+
+#Adding new lines for Soft command test.
