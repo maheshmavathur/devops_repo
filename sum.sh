@@ -8,7 +8,7 @@ echo "The sum of 2 numbers is $sum"
 sum1=`expr $sum`
 echo "The value of sum is stored in $sum1"
 lsoutput=`ls`
-echo "The output of ls command is store in\n $lsoutput"
+eno maheshaaaaaa
 
 
 #This is in Branch5. File edited is sum.sh
