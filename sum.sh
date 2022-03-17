@@ -12,3 +12,7 @@ echo "The output of ls command is store in\n $lsoutput"
 
 
 #Adding new lines for Soft command test.
+
+#New line added
+
+#Sumne adding lines
