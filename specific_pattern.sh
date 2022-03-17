@@ -10,3 +10,5 @@ then
 else
 	echo "The pattern does not contain in any files"
 fi
+
+#This is edited to check the reset command
