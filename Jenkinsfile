@@ -1,26 +1,20 @@
 pipeline {
     agent any
     stages {
-        stage('Stage 1') 
-		{ 
-            steps 
-			{
-			parallel
-			(
-				stage1: {
-              sh "echo "Hi, Good Morning!!""
-			  },
-			  
-			  stage2: {
-              sh "echo "This is a test branch!!""
-			  }
-			  
-			  stage3: {
-              sh "echo "OK, TESTED""
-			  }
-			)
+        stage('Parallel 1') {
+            parallel {
+                stage('Parallel run 1') {
+                    steps {
+                        sh "echo "Hi, Good morning!!""
+                    }
+                }
+                stage('Parallel run 2') {
+                    steps {
+                       sh "echo "How are you?""
+                        
+                    }
+                }
             }
-		}
-
-        }        
+        }
     }
+}
