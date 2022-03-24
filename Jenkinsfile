@@ -1,21 +1,25 @@
 pipeline {
     agent any
     stages {
-        stage('checkout') { 
+		stage ('Starting of the Stage') {
+		parallel {
+        stage('Stage 1') { 
             steps {
               sh "echo 'Hi'"
             }
         }
-stage('build') { 
-            steps {
-              sh "echo 'Hi'"
-            }
-        }        
+					stage('Stage 2') { 
+					steps {
+					sh "echo 'Good morning'"
+					}
+					}        
    
-stage('deploy') { 
-            steps {
-              sh "echo 'Hi'"
-            }
-        }        
-    }
-}
+							stage('Stage 3') { 
+								steps {
+								  sh "echo 'OK Bye'"
+								}
+							}        
+				}
+			}
+		}
+	}
