@@ -1,20 +1,20 @@
 pipeline {
-    agent { label 'java' }
+    agent any
     stages {
-        stage('stage1') { 
+        stage('checkout') { 
             steps {
-              sh "echo "Hi""
+              sh "echo 'Hi'"
             }
         }
-stage('stage2') { 
+stage('build') { 
             steps {
-              sh "echo "Hello""
+              sh "echo 'Hi'"
             }
         }        
    
-stage('stage3') { 
+stage('deploy') { 
             steps {
-            sh "echo "How are you?""
+              sh "echo 'Hi'"
             }
         }        
     }
